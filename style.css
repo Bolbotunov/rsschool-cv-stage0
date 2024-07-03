@@ -1,0 +1,200 @@
+html{
+	height: 100vh;
+	color: #fff;
+	scroll-behavior: smooth;
+	background-color: rgb(255, 255, 255);
+}
+p{
+	margin: 0px;
+}
+pre{
+	margin: 0px;
+}
+.wrapper{
+	overflow: hidden;
+	background-color: #000;
+	border-radius: 70px;
+	display: flex;
+	position: relative;
+
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 1440px;
+	width: 100%;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+._container{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1230px;
+	padding-right: 30px;
+	padding-left: 30px;
+	
+}
+.header{
+
+}
+.nav {
+	padding-top: 30px;
+	position: relative;
+	z-index: 3;
+}
+.menu__item {
+	display: flex;
+	padding-inline-start: 0px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.item {
+	transition: .5s;
+	list-style: none;
+}
+.item-link {
+	text-decoration: none;
+	color: inherit;
+	font-family:lexend;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 30px;
+	color: #F25959;
+	transition: .5s;
+}
+.header__info{
+	display: flex;
+	height: 737px;	
+}
+.header__ingo_image{
+	position: relative;
+overflow: hidden;
+border-radius: 70px;
+}
+.image{
+	border-radius: 70px;
+	overflow: hidden;
+	position: absolute;
+	top: -150px;
+	right: -20px;
+}
+.header__info_title{
+	font-family:lexend;
+	font-size: 28px;
+	position: relative;
+	z-index: 5;
+	top: 220px;
+}
+.subtitle{
+	color: #F25959;
+}
+.title{
+	color: #ffffff;
+}
+.section{
+	position: relative;
+	top: -50px;
+}
+.section__title{
+	margin-bottom: 10px;
+}
+.title_title{
+	font-family:lexend;
+	font-size: 32px;
+	color: #F25959;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.text{
+	font-family:lexend;
+	font-size: 36px;
+	line-height: 45px;
+	font-weight: 200;
+	margin-bottom: 75px;
+}
+.list{
+	display: flex;
+	justify-content: space-around;
+}
+.code_sample{
+	font-family:lexend;
+	font-weight: 200;
+	font-size: 36px;
+	line-height: 45px;
+	color: #ffffff;
+}
+.projects{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 75px;
+}
+.project__wrapper{
+	width: 50%;
+}
+.projects__image img{
+	object-fit: contain;
+	width: 80%;
+	height: 100%;
+	transition: .4s;
+}
+.projects__image img:hover{
+	transform: scale(1.15);
+}
+#skills__list{
+	margin-bottom: -30px;
+}
+.contacts_languages{
+	position: relative;
+	top: 0px;
+	display: flex;
+	justify-content: space-between
+}
+#Contacts{
+top: 0px;
+width: 50%;
+}
+#Languages{
+top: 0px;
+width: 50%;
+}
+.contacts_list{
+	display: flex;
+	flex-direction: column;
+}
+.contacts_item, .lang_item{
+	margin-bottom: 40px;
+}
+.footer{
+	background: linear-gradient(180deg, rgb(0, 0, 0), rgb(255, 255, 255) 17%);
+}
+.footer__wrapper{
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer_item img{
+	margin: 50px 0px 50px 0px;
+	width: 200px;
+	height: 200px;
+	object-fit: contain;
+	transition: .4s;
+}
+.by{
+	color: #000;
+	font-family:lexend;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 30px;
+}
+.footer_item img:hover{
+	transform: scale(1.15);
+}
+.item:hover{
+	transform: scale(1.15);
+}
+.item-link:hover{
+	color: #fff;
+}
+.rss{
+padding-left: 80px;
+}
