@@ -1,12 +1,132 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="zxx">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CV Bolbotunov</title>
-<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CV Bolbotunov</title>
+	<link rel = "stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-<p>Bolbotunov CV</p>
+	<div class="wrapper">
+		<header class="header _container">
+			<nav class="nav">
+				<ul class="menu__item">
+					<li class="item"><a href="#About" class="item-link">About</a></li>
+					<li class="item"><a href="#Education" class="item-link">Education</a></li>
+					<li class="item"><a href="#Skills" class="item-link">Skills</a></li>
+					<li class="item"><a href="#Code" class="item-link">Code</a></li>
+					<li class="item"><a href="#Projects" class="item-link">Projects</a></li>
+					<li class="item"><a href="#Contacts" class="item-link">Contacts</a></li>
+					<li class="item"><a href="#Languages" class="item-link">languages</a></li>
+				</ul>
+			</nav>
+			<div class="header__info">
+				<div class="header__info_title">
+					<h1 class="title">Konstantin Bolbotunov</h1>
+					<h2 class="subtitle">Frontend Developer</h2>
+				</div>
+				<div class="header__info_image">
+					<img src="/assets/img/avatar.jpg" alt="#" class="image">
+				</div>
+			</div>
+		</header>
+		<main class="main _container">
+			<div class="section" >
+				<div class="section__title" id="About"><h2 class="title_title">About Me!</h2></div>
+				<div class="section__text">
+					<p class="section_text text">At the moment I am studying at RS School on
+						the Frontend Developer Stage0 course.
+						Today I have been working in logistics for 8 years,in Freight. I will plan to find 
+						a job as a Frontend Developer after completing the course</p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="section__title" id="Education"><h2 class="title_title" >Education</h2></div>
+				<div class="section__text">
+					<p class="section__text text">Graduated from the Polotsk State University in 2013. 
+						Specializing in Logistics. Completed UX/UI design courses in 2020 at UX Mind in 2020
+						Completed RSSchool stage 0 in 2023</p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="section__title" id="Skills"><h2 class="title_title">Skills</h2></div>
+				<div class="section__text text" id="skills__list">
+					<ul class='list'>
+						<li class="text skills">HTML</li>
+						<li class="text skills">CSS</li>
+						<li class="text skills">JS</li>
+						<li class="text skills">GIT</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section">
+				<div class="section__title" id="Code"><h2 class="title_title">Code</h2></div>
+				<div class="section__text">
+<pre class="code_sample text">
+const block=document.getElementById('block');
+const character=document.getElementById('character');
+document.addEventListener('keydown', function(event){jump();});
+function jump(){
+if (vadim.classList !='jump')
+{vadim.classList.add('jump')}
+setTimeout(function(){
+vadim.classList.remove('jump')},600)}
+</pre>
+				</div>
+			</div>
+			<div class="section">
+				<div class="section__title" id="Projects"><h2 class="title_title">Projects</h2></div>
+				<div class="projects">
+					<div class="project__wrapper">
+						<div class="projects__title text">Website for coffee house<br>
+							RSSchool 2023Q4</div>
+						<div class="projects__image"><img src="assets/img/project1.png" alt="project" class="project_image"></div>
+					</div>
+					<div class="project__wrapper">
+						<div class="projects__title text">Website for plants shop<br>
+							RSSchool 2023Q2</div>
+						<div class="projects__image"><img src="assets/img/project2.png" alt="project" class="project_image"></div>
+				</div>
+			</div>
+			</div>
+			<div class="section contacts_languages">
+			<div class="section" id="Contacts">
+				<div class="section__title"><h2 class="title_title">Contacts</h2></div>
+				<div class="section__text">
+					<ul class='list contacts_list'>
+						<li class="text contacts_item">tel: +375336477767</li>
+						<li class="text contacts_item">tel: +375295005131</li>
+						<li class="text contacts_item">e-mail: kosne@list.ru</li>
+						<li class="text contacts_item">LinkedIn: konstantin-bolbotunov</li>
+						<li class="text contacts_item">GitHub: Bolbotunov</li>
+					</ul>
+				</div>
+			</div>
+			<div class="section" id="Languages">
+				<div class="section__title"><h2 class="title_title">Languages</h2></div>
+				<div class="section__text">
+					<ul class='list contacts_list'>
+						<li class="text lang_item">Russian: native</li>
+						<li class="text lang_item">English: A2</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__wrapper _container">
+				<div class="git footer_item"><a href="https://github.com/bolbotunov"><img src="assets/img/git.png" class="logo" alt="git"></a></div>
+				<div class="rss footer_item"><a class="linkrss" href="https://rs.school/courses/javascript-ru"><img src="assets/img/rss.png" alt="rss"></a></div>
+				<div class="by footer_item"><p>2024 by Bolbotunov</p> </div>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>
