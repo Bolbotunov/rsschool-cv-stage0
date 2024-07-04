@@ -3,6 +3,7 @@ html{
 	color: #fff;
 	scroll-behavior: smooth;
 	background-color: rgb(255, 255, 255);
+	transition: .5s;
 }
 p{
 	margin: 0px;
@@ -16,7 +17,6 @@ pre{
 	border-radius: 70px;
 	display: flex;
 	position: relative;
-
 	flex-direction: column;
 	margin: 0 auto;
 	max-width: 1440px;
@@ -40,12 +40,15 @@ pre{
 	padding-top: 30px;
 	position: relative;
 	z-index: 3;
+	padding-right: 30px;
+	
 }
 .menu__item {
 	display: flex;
 	padding-inline-start: 0px;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	
 }
 .item {
 	transition: .5s;
@@ -60,6 +63,7 @@ pre{
 	font-size: 30px;
 	color: #F25959;
 	transition: .5s;
+	margin-right: 25px;
 }
 .header__info{
 	display: flex;
@@ -76,6 +80,7 @@ border-radius: 70px;
 	position: absolute;
 	top: -150px;
 	right: -20px;
+	transition: .5s;
 }
 .header__info_title{
 	font-family:lexend;
@@ -83,6 +88,7 @@ border-radius: 70px;
 	position: relative;
 	z-index: 5;
 	top: 220px;
+	transition: .5s;
 }
 .subtitle{
 	color: #F25959;
@@ -90,9 +96,24 @@ border-radius: 70px;
 .title{
 	color: #ffffff;
 }
+
+@media(max-width:680px){
+	.image{
+		width: 650px;
+		height: 650px;
+		top: -50px;
+		right: 0px;
+	}
+	.header__info_title{
+		top: 450px;
+		font-size: 18px;
+	}
+}
 .section{
 	position: relative;
 	top: -50px;
+	padding-right: 20px;
+
 }
 .section__title{
 	margin-bottom: 10px;
@@ -110,6 +131,7 @@ border-radius: 70px;
 	line-height: 45px;
 	font-weight: 200;
 	margin-bottom: 75px;
+	padding-right: 20px;
 }
 .list{
 	display: flex;
@@ -121,12 +143,24 @@ border-radius: 70px;
 	font-size: 36px;
 	line-height: 45px;
 	color: #ffffff;
+	transition: .5s;
+}
+@media(max-width:1120px){
+	.code_sample{
+		font-size: 26px;
+		line-height: 38px;
+		width: 600px;
+		white-space: pre-wrap;
+	}
 }
 .projects{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 75px;
+	transition: .5s;
 }
+
+
 .project__wrapper{
 	width: 50%;
 }
@@ -139,6 +173,20 @@ border-radius: 70px;
 .projects__image img:hover{
 	transform: scale(1.15);
 }
+
+@media(max-width:880px){
+	.projects{
+		display: contents;
+		flex-wrap: wrap;
+	}
+	.project__wrapper{
+		width: 100%;
+	}
+	.text{
+		padding-top: 30px;
+		margin-bottom: 30px;
+	}
+}
 #skills__list{
 	margin-bottom: -30px;
 }
@@ -146,7 +194,8 @@ border-radius: 70px;
 	position: relative;
 	top: 0px;
 	display: flex;
-	justify-content: space-between
+	justify-content: space-between;
+	transition: .4s;
 }
 #Contacts{
 top: 0px;
@@ -197,4 +246,24 @@ width: 50%;
 }
 .rss{
 padding-left: 80px;
+}
+@media(max-width:880px){
+	.contacts_languages{
+		display: contents;
+		flex-wrap: wrap;
+	}
+	.contacts_item{
+		margin-bottom: 0px;
+		width: 500px;
+	}
+	#Сontacts{
+		width: 100%;
+	}
+	.footer__wrapper{
+		flex-direction: column;
+	}
+	.rss{
+		padding-left: 0px;
+		padding-bottom: 70px;
+		}
 }
