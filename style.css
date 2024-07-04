@@ -41,7 +41,7 @@ pre{
 	position: relative;
 	z-index: 3;
 	padding-right: 30px;
-	
+	transition: .6s;
 }
 .menu__item {
 	display: flex;
@@ -64,6 +64,35 @@ pre{
 	color: #F25959;
 	transition: .5s;
 	margin-right: 25px;
+}
+
+@media(max-width:1202px){
+	.nav{
+		position: absolute;
+		top: 0px;
+		left: -100%;
+		background-color: #000;
+		z-index: 20;
+		width: 0%;
+		height: 100%;
+		overflow-y: auto;
+		padding-left: 40px;
+	}
+	.menu__item{
+	flex-direction: column;
+	gap: 50px;
+	padding-top: 100px;
+	}
+	.item-link {
+		font-weight: 600;
+		font-size: 48px;
+		color: #F25959;
+		transition: .5s;
+		margin-right: 25px;
+	}
+	._container{
+		padding: 20px;
+	}
 }
 .header__info{
 	display: flex;
@@ -97,7 +126,7 @@ border-radius: 70px;
 	color: #ffffff;
 }
 
-@media(max-width:680px){
+@media(max-width:1000px){
 	.image{
 		width: 650px;
 		height: 650px;
@@ -146,6 +175,9 @@ border-radius: 70px;
 	transition: .5s;
 }
 @media(max-width:1120px){
+	.nav{
+		display: none;
+	}
 	.code_sample{
 		font-size: 26px;
 		line-height: 38px;
@@ -174,7 +206,7 @@ border-radius: 70px;
 	transform: scale(1.15);
 }
 
-@media(max-width:880px){
+@media(max-width:1000px){
 	.projects{
 		display: contents;
 		flex-wrap: wrap;
@@ -247,7 +279,7 @@ width: 50%;
 .rss{
 padding-left: 80px;
 }
-@media(max-width:880px){
+@media(max-width:1000px){
 	.contacts_languages{
 		display: contents;
 		flex-wrap: wrap;
@@ -266,4 +298,84 @@ padding-left: 80px;
 		padding-left: 0px;
 		padding-bottom: 70px;
 		}
+}
+
+.burger__btn{
+	display: none;
+}
+
+@media(max-width:1202px){
+	.burger__btn{
+		display: block;
+		background-color: #000000;
+		border-radius: 100px;
+		width: 84px;
+		height: 84px;
+		position: absolute;
+		top: 0.8%;
+		left: 5.1%;
+		z-index: 30;
+	}
+	.nav{
+		display: block;
+	}
+}
+
+.burger__line:before{
+	content: '';
+    background-color: #ffffff;
+    position: absolute;
+    height: 4px;
+    width: 45px;
+    top: 38%;
+    left: calc(50% - 22px);
+	transition: .6s;
+}
+
+.burger__line:after{
+	content: '';
+    background-color: #ffffff;
+    position: absolute;
+    height: 4px;
+    width: 45px;
+    top: 59%;
+    left: calc(50% - 22px);
+	transition: .6s;
+}
+.burger__line{
+	height: 10px;
+    width: 4px;
+	background-color: #000000;
+	transition: .6s;
+}
+
+.burger__close:before{
+	transform: rotate(-45deg);
+	top: 47%;
+	background-color: #F25959;
+	transition: .6s;
+}
+.burger__close:after{
+	transform: rotate(45deg);
+	top: 47%;
+	background-color: #F25959;
+	transition: .6s;
+}
+
+.active__nav{
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	transition: .9s;
+	position: fixed;
+}
+
+.stop__scroll{
+	overflow: hidden;
+}
+.header__burger{
+	background-color: aquamarine;
+	position: absolute;
+	width: 100%;
+	z-index: 50;
 }
